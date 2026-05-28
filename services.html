@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the settlement, youth sports, professional workshops, and cultural services provided by the Afghan Canadian Capital Society (ACCS) in Ottawa.">
+  <title>Our Services | Afghan Canadian Capital Society</title>
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Translucent Navigation Header -->
+  <header class="site-header scrolled" id="main-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-wrapper" id="nav-logo-link">
+        <img src="assets/logo.jpg" alt="ACCS Logo" id="header-logo-img">
+        <div class="logo-text">
+          <span class="logo-title">ACCS</span>
+          <span class="logo-subtitle">Capital Society</span>
+        </div>
+      </a>
+      
+      <nav class="nav-menu" id="navigation-menu">
+        <a href="index.html" class="nav-link" id="nav-home">Home</a>
+        <a href="about.html" class="nav-link" id="nav-about">About Us</a>
+        <a href="services.html" class="nav-link active" id="nav-services">Our Services</a>
+        <a href="contact.html" class="nav-link" id="nav-portal">Community Portal</a>
+      </nav>
+
+      <div class="flex-center" style="gap: 16px;">
+        <button class="theme-toggle flex-center" id="mode-toggle-btn" aria-label="Toggle Theme">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+        </button>
+        <button class="mobile-menu-toggle" id="menu-hamburger-btn" aria-label="Toggle Menu" aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Services Hero Section -->
+  <section class="services-hero section-padding" style="padding-top: 140px; background: radial-gradient(circle at 90% 20%, var(--secondary-light) 0%, transparent 40%);">
+    <div class="container">
+      <div class="section-header fade-in-scroll visible" style="margin-bottom: 40px;">
+        <span class="section-tag">What We Provide</span>
+        <h1 class="hero-title" style="font-size: 3rem; margin-bottom: 20px; text-align: center;">Our Services & Programs</h1>
+        <p class="section-desc" style="text-align: center; max-width: 750px; margin: 0 auto;">
+          We host an expansive suite of programs to cover newcomer integration, professional growth, youth development, and cultural expression. Search or filter through our current programs below.
+        </p>
+      </div>
+
+      <!-- Live Search Bar -->
+      <div class="search-bar-container fade-in-scroll visible" id="search-component">
+        <i class="fas fa-search"></i>
+        <input type="text" class="search-input" placeholder="Search services (e.g. Housing, Music, Language, Finance...)" aria-label="Search Services">
+      </div>
+
+      <!-- Live Filter Pills -->
+      <div class="filters-container fade-in-scroll visible" id="filter-component">
+        <button class="filter-btn active" data-filter="all">All Services</button>
+        <button class="filter-btn" data-filter="newcomers">Newcomer Settlement</button>
+        <button class="filter-btn" data-filter="youth">Youth & Sports</button>
+        <button class="filter-btn" data-filter="professional">Workshops & Support</button>
+        <button class="filter-btn" data-filter="cultural">Cultural Exchange</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Dynamic Listing Grid -->
+  <section class="services-grid-section" style="padding-bottom: 100px;">
+    <div class="container">
+      <!-- Grid Container -->
+      <div class="grid grid-3" id="services-cards-wrapper">
+        
+        <!-- CARD 1: Newcomers - Housing -->
+        <div class="service-card service-grid-card fade-in-scroll visible" data-category="newcomers" id="svc-housing">
+          <div class="service-icon flex-center" style="background-color: var(--primary-light); color: var(--primary);">
+            <i class="fas fa-house-chimney"></i>
+          </div>
+          <h3 class="service-card-title">Housing Assistance</h3>
+          <p class="service-card-desc">Providing crucial settlement guidance to help newly arrived families find safe, affordable, and welcoming housing in the capital region, including application reviews and translation help.</p>
+          <a href="contact.html?tab=general" class="service-card-link">Apply / Inquire <i class="fas fa-chevron-right"></i></a>
+        </div>
+
+        <!-- CARD 2: Newcomers - General Integration -->
+        <div class="service-card service-grid-card fade-in-scroll visible" data-category="newcomers" id="svc-integration">
+          <div class="service-icon flex-center" style="background-color: var(--primary-light); color: var(--primary);">
+            <i class="fas fa-compass"></i>
+          </div>
+          <h3 class="service-card-title">Settlement Navigators</h3>
+          <p class="service-card-desc">One-on-one personal guidance for Canadian systems navigation, school enrollment, documentation, driver licensing, and community referrals during your first five years.</p>
+          <a href="contact.html?tab=general" class="service-card-link">Request Navigator <i class="fas fa-chevron-right"></i></a>
+        </div>
+
+        <!-- CARD 3: Youth - Sports -->
+        <div class="service-card green-theme service-grid-card fade-in-scroll visible" data-category="youth" id="svc-youth-sports">
+          <div class="service-icon flex-center">
+            <i class="fas fa-futbol"></i>
+          </div>
+          <h3 class="service-card-title">Youth Sports Clubs</h3>
+          <p class="service-card-desc">Active youth sports programs, regular soccer tournaments, athletics clubs, and recreational training camps promoting physical health and constructive teamwork.</p>
+          <a href="contact.html?tab=volunteer" class="service-card-link">Join Club <i class="fas fa-chevron-right"></i></a>
+        </div>
+
+        <!-- CARD 4: Youth - Intergenerational Connect -->
+        <div class="service-card green-theme service-grid-card fade-in-scroll visible" data-category="youth" id="svc-generations">
+          <div class="service-icon flex-center">
+            <i class="fas fa-people-arrows"></i>
+          </div>
+          <h3 class="service-card-title">Intergenerational Bridging</h3>
+          <p class="service-card-desc">Bringing community elders and next-generation youth together to share history, wisdom, and leadership insights, cultivating deep respect and networking.</p>
+          <a href="contact.html?tab=general" class="service-card-link">View Dates <i class="fas fa-chevron-right"></i></a>
+        </div>
+
+        <!-- CARD 5: Seniors Events -->
+        <div class="service-card service-grid-card fade-in-scroll visible" data-category="youth" id="svc-seniors">
+          <div class="service-icon flex-center" style="background-color: var(--primary-light); color: var(--primary);">
+            <i class="fas fa-mug-hot"></i>
+          </div>
+          <h3 class="service-card-title">Seniors Outings & Teas</h3>
+          <p class="service-card-desc">Social gatherings, group picnics, and wellness chats tailored specifically for Afghan senior citizens, minimizing isolation and maintaining connections.</p>
+          <a href="contact.html?tab=general" class="service-card-link">RSVP Event <i class="fas fa-chevron-right"></i></a>
+        </div>
+
+        <!-- CARD 6: Women-Only Events -->
+        <div class="service-card service-grid-card fade-in-scroll visible" data-category="professional" id="svc-women">
+          <div class="service-icon flex-center" style="background-color: var(--primary-light); color: var(--primary);">
+            <i class="fas fa-venus"></i>
+          </div>
+          <h3 class="service-card-title">Women's Circles</h3>
+          <p class="service-card-desc">Dedicated, safe forums hosting professional networking sessions, mental wellness workshops, traditional arts sharing, and family support networks.</p>
+          <a href="contact.html?tab=general" class="service-card-link">Get Updates <i class="fas fa-chevron-right"></i></a>
+        </div>
+
+        <!-- CARD 7: Volunteer Opportunities -->
+        <div class="service-card green-theme service-grid-card fade-in-scroll visible" data-category="professional" id="svc-volunteer">
+          <div class="service-icon flex-center">
+            <i class="fas fa-hand-holding-heart"></i>
+          </div>
+          <h3 class="service-card-title">Volunteer Pathways</h3>
+          <p class="service-card-desc">Build leadership skills and give back by joining operational teams. Assist in planning events, translations, tutoring, and logistical support.</p>
+          <a href="contact.html?tab=volunteer" class="service-card-link">Apply to Volunteer <i class="fas fa-chevron-right"></i></a>
+        </div>
+
+        <!-- CARD 8: Professional - Employment Support -->
+        <div class="service-card service-grid-card fade-in-scroll visible" data-category="professional" id="svc-employment">
+          <div class="service-icon flex-center" style="background-color: var(--primary-light); color: var(--primary);">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <h3 class="service-card-title">Employment Pathways</h3>
+          <p class="service-card-desc">Resume writing assistance, interview mockups, job search strategy sessions, professional networking referrals, and Canadian workplace mentoring.</p>
+          <a href="contact.html?tab=general" class="service-card-link">Book Consulting <i class="fas fa-chevron-right"></i></a>
+        </div>
+
+        <!-- CARD 9: Afghan Business Directories -->
+        <div class="service-card service-grid-card fade-in-scroll visible" data-category="professional" id="svc-directory">
+          <div class="service-icon flex-center" style="background-color: var(--primary-light); color: var(--primary);">
+            <i class="fas fa-store"></i>
+          </div>
+          <h3 class="service-card-title">Business Hub Directory</h3>
+          <p class="service-card-desc">Connecting community members with local Afghan-owned businesses, catering companies, lawyers, and mechanics, encouraging community commerce.</p>
+          <a href="contact.html?tab=general" class="service-card-link">Browse Directory <i class="fas fa-chevron-right"></i></a>
+        </div>
+
+        <!-- CARD 10: Youth - Social Outings -->
+        <div class="service-card green-theme service-grid-card fade-in-scroll visible" data-category="youth" id="svc-youth-outings">
+          <div class="service-icon flex-center">
+            <i class="fas fa-mountain-sun"></i>
+          </div>
+          <h3 class="service-card-title">Youth Social Excursions</h3>
+          <p class="service-card-desc">Fun outdoor outings, skiing trips, laser tag sessions, and academic tutoring forums. Designed to forge strong peer friendships in a healthy setting.</p>
+          <a href="contact.html?tab=general" class="service-card-link">Upcoming Outings <i class="fas fa-chevron-right"></i></a>
+        </div>
+
+        <!-- CARD 11: Family Healthcare Workshops -->
+        <div class="service-card service-grid-card fade-in-scroll visible" data-category="professional" id="svc-healthcare">
+          <div class="service-icon flex-center" style="background-color: var(--primary-light); color: var(--primary);">
+            <i class="fas fa-heartbeat"></i>
+          </div>
+          <h3 class="service-card-title">Healthcare Literacy</h3>
+          <p class="service-card-desc">Family workshops helping newcomers navigate Ontario's healthcare system, OHIP cards, finding family doctors, and healthy wellness strategies.</p>
+          <a href="contact.html?tab=general" class="service-card-link">Register Session <i class="fas fa-chevron-right"></i></a>
+        </div>
+
+        <!-- CARD 12: Financial Information Sessions -->
+        <div class="service-card service-grid-card fade-in-scroll visible" data-category="professional" id="svc-finance">
+          <div class="service-icon flex-center" style="background-color: var(--primary-light); color: var(--primary);">
+            <i class="fas fa-coins"></i>
+          </div>
+          <h3 class="service-card-title">Financial Empowerment</h3>
+          <p class="service-card-desc">Information sessions covering Canadian banking, budget controls, tax filings, credit score calculations, and child benefit programs for newcomers.</p>
+          <a href="contact.html?tab=general" class="service-card-link">Register Session <i class="fas fa-chevron-right"></i></a>
+        </div>
+
+        <!-- CARD 13: Youth - Life Skills Workshops -->
+        <div class="service-card green-theme service-grid-card fade-in-scroll visible" data-category="youth" id="svc-life-skills">
+          <div class="service-icon flex-center">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3 class="service-card-title">Youth Life Skills</h3>
+          <p class="service-card-desc">Resilience building, university application guidance, public speaking training, and time management coaching, empowering future leaders.</p>
+          <a href="contact.html?tab=general" class="service-card-link">View Schedules <i class="fas fa-chevron-right"></i></a>
+        </div>
+
+        <!-- CARD 14: Cultural - Mother Tongue Training -->
+        <div class="service-card service-grid-card fade-in-scroll visible" data-category="cultural" id="svc-language">
+          <div class="service-icon flex-center" style="background-color: var(--primary-light); color: var(--primary);">
+            <i class="fas fa-language"></i>
+          </div>
+          <h3 class="service-card-title">Mother Tongue Training</h3>
+          <p class="service-card-desc">Dari and Pashto literacy classes for children and youth, ensuring the preservation of native languages and literary cultural traditions.</p>
+          <a href="contact.html?tab=general" class="service-card-link">Enroll Child <i class="fas fa-chevron-right"></i></a>
+        </div>
+
+        <!-- CARD 15: Cultural - Music Evenings -->
+        <div class="service-card service-grid-card fade-in-scroll visible" data-category="cultural" id="svc-music">
+          <div class="service-icon flex-center" style="background-color: var(--primary-light); color: var(--primary);">
+            <i class="fas fa-music"></i>
+          </div>
+          <h3 class="service-card-title">Traditional Music Nights</h3>
+          <p class="service-card-desc">Folk music nights and basic instrument workshops focusing on Afghan classics (Rubab, Harmonium, Tabla), celebrating acoustic heritage.</p>
+          <a href="contact.html?tab=general" class="service-card-link">Book Tickets <i class="fas fa-chevron-right"></i></a>
+        </div>
+
+        <!-- CARD 16: Cultural - Holiday Celebrations -->
+        <div class="service-card green-theme service-grid-card fade-in-scroll visible" data-category="cultural" id="svc-holidays">
+          <div class="service-icon flex-center">
+            <i class="fas fa-calendar-star"></i>
+          </div>
+          <h3 class="service-card-title">Holiday Gatherings</h3>
+          <p class="service-card-desc">Grand celebrations for Nawruz (New Year), Eid-al-Fitr, Eid-al-Adha, and Afghan Independence Day, uniting the entire capital community in joy.</p>
+          <a href="contact.html?tab=general" class="service-card-link">Upcoming Celebrations <i class="fas fa-chevron-right"></i></a>
+        </div>
+
+      </div>
+
+      <!-- No Results Message -->
+      <div id="no-results-message" style="display: none; text-align: center; padding: 60px 20px; font-family: var(--font-header);">
+        <i class="fas fa-search-minus" style="font-size: 3rem; color: var(--text-muted); margin-bottom: 20px;"></i>
+        <h3 style="font-size: 1.5rem; margin-bottom: 8px;">No matching services found</h3>
+        <p style="color: var(--text-secondary);">Try refining your search query or choosing another category above.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Modal for Interactive Forms -->
+  <div class="modal-overlay flex-center" id="success-modal">
+    <div class="modal-content" id="success-modal-content">
+      <div class="modal-icon flex-center" id="success-modal-icon">
+        <i class="fas fa-check"></i>
+      </div>
+      <h3 class="modal-title" id="modal-display-title">Submission Confirmed!</h3>
+      <p class="modal-text" id="modal-display-text">Thank you. Your request has been securely processed.</p>
+      <button class="btn btn-primary" id="modal-close-btn" style="width: 100%;">Continue</button>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="site-footer" id="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <img src="assets/logo.jpg" alt="ACCS Logo" id="footer-logo-img">
+        <p>The Afghan Canadian Capital Society (ACCS) operates as a registered non-profit, independent community association in Ottawa, Ontario. Guided by transparency and cultural values.</p>
+        <div class="social-links">
+          <a href="https://facebook.com" class="social-link flex-center" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com" class="social-link flex-center" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com" class="social-link flex-center" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:AfghanCCS@Gmail.com" class="social-link flex-center" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html" id="footer-link-home">Home</a></li>
+          <li><a href="about.html" id="footer-link-about">About Us</a></li>
+          <li><a href="services.html" id="footer-link-services">Our Services</a></li>
+          <li><a href="contact.html" id="footer-link-portal">Community Portal</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Pillars</h3>
+        <ul class="footer-links">
+          <li><a href="services.html?filter=newcomers" id="footer-pillar-newcomers">Newcomer Support</a></li>
+          <li><a href="services.html?filter=youth" id="footer-pillar-youth">Youth & Sports</a></li>
+          <li><a href="services.html?filter=professional" id="footer-pillar-prof">Professional Workshops</a></li>
+          <li><a href="services.html?filter=cultural" id="footer-pillar-culture">Cultural Exchange</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contact Info</h3>
+        <ul class="footer-contact">
+          <li>
+            <i class="fas fa-phone-alt"></i>
+            <span>(613) 612 – 8890</span>
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i>
+            <span>AfghanCCS@Gmail.com</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Afghan Canadian Capital Society (ACCS). All Rights Reserved. Prepared in accordance with society Bylaws.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="main.js"></script>
+</body>
+</html>
